@@ -1,0 +1,39 @@
+
+//Brand colors
+@gray: #f2f2f2;
+@dark_gray: #282828;
+@white: #ffffff;
+@black: #000000;
+@red: #e72d2e;
+
+//font families
+@font-family-primary: 'Montserrat', sans-serif;
+@font-family-secondary: 'Open Sans', sans-serif;
+
+// Default link colors
+@link-color: @black;
+@link-color-hover:  @red;
+
+a, a:visited {
+	text-decoration: none;
+	color: @link-color;
+	&:hover {
+		color: @link-color-hover;
+	}
+}
+
+// Document Base Styling
+html, body {
+	-webkit-font-smoothing: antialiased !important;
+	font-family: @font-family-primary;
+	font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+p {
+	font-family: @font-family-secondary;
+}
+strong {
+	font-weight: 600;
+}

@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         files: ['less/**/*.less'], // which files to watch
         tasks: ['less'],
         options: {
-          nospawn: true
+          nospawn: true,
+          livereload: true
         }
       }
     }
