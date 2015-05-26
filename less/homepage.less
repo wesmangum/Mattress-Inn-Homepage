@@ -23,22 +23,29 @@
 	section.coverpage {
 		padding: 0;
 		.headlines {
-			height: 150px;
+			background-color: @red;
+			.row {
+				height: 140px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
 			.headline {
-				display: inline-block;
 				text-align: center;
 				color: @white;
 				background-color: @red;
 				padding: 20px 30px;
 				height: 100%;
 				&.center {
-					padding-top: 40px;
+					padding-top: 30px;
 					background-color: @black;
 					border-left: 2px solid @white;
 					border-right: 2px solid @white;
-					h3 {
+					h2 {
 						margin: 0;
 						text-transform: uppercase;
+						&:first-of-type {
+							font-weight: bold;
+						}
 					}
 				}
 				a {

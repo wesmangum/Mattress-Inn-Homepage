@@ -1,29 +1,93 @@
 header {
-	.row {
-		position: relative;
-		display: table;
-		width: 100%;
+	.super-header {
+		max-width: 1200px;
+		margin: 0 auto;
+		border-bottom: 2px solid @gray;
+		div {
+			display: inline-block;
+		}
+		.facebook-header {
+			margin-left: 20px;
+			border-left: 2px solid @gray;
+		}
 	}
 	.main {
-		padding: 15px 0;
-	}
-	.logo {
-		width: 386px;
-		display: inline-block;
-		display: table-cell;
-		vertical-align: middle;
-	}
-	nav {
-		display: inline-block;
-		display: table-cell;
-		vertical-align: middle;
-		text-align: right;
-		ul {
-			list-style-type: none;
-			li {
-				display: inline-block;
-				margin-left: 30px;
-				text-transform: uppercase;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+		position: relative;
+		.logo {
+			width: 325px;
+			display: inline-block;
+			margin: 10px 0;
+			img {
+				width: 100%;
+			}
+			@media (max-width: @tablet) {
+				width: 275px;
+			}
+			@media (max-width: @phone) {
+				width: 115px;
+				text-align: center;
+				display: block;
+				margin: 5px auto;
+			}
+		}
+		nav {
+			display: inline-block;
+			text-align: right;
+			float: right;
+			padding-top: 20px;
+			.menu {
+				display: none;
+			}
+			ul {
+				list-style-type: none;
+				padding: 0;
+				li {
+					display: inline-block;
+					margin-left: 20px;
+					text-transform: uppercase;
+					&:first-of-type {
+						margin-left: 0;
+					}
+					@media (max-width: @tablet) {
+						margin-left: 10px;
+						font-size: 12px;
+					}
+				}
+			}
+			@media (max-width: @tablet) {
+				padding-top: 15px;
+			}
+			@media (max-width: @phone) {
+				float: none;
+				display: block;
+				width: 100%;
+				text-align: left;
+				overflow: hidden;
+				padding: 0;
+				.menu {
+					display: inline-block;
+					position: absolute;
+					top: 0;
+					left: 15px;
+				}
+
+				ul {
+					margin: 0;
+					max-height: 0;
+					.transition( max-height 0.1s ease-in-out);
+					&.show {
+						max-height: 450px;
+					}
+					li {
+						display: block;
+						margin: 0;
+						padding: 10px 0;
+						border-top: 1px solid @black;
+					}
+				}
 			}
 		}
 	}
