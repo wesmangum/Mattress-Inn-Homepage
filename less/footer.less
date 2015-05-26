@@ -13,6 +13,20 @@ footer {
 				border-right: 1px solid @white;
 			}
 		}
+		@media (max-width: @phone) {
+			.row {
+				.button, .info {
+					padding: 10px 15px;
+				}
+				.button {
+					border-right: none;
+					float: left;
+				}
+				.info {
+					float: right;
+				}
+			}
+		}
 	}
 	.sub-footer {
 		padding: 2em 0;
