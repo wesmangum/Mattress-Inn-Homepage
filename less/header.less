@@ -1,14 +1,37 @@
 header {
 	.super-header {
-		max-width: 1200px;
-		margin: 0 auto;
 		border-bottom: 2px solid @gray;
-		div {
+		.contain {
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		div:not(.contain) {
 			display: inline-block;
 		}
 		.facebook-header {
 			margin-left: 20px;
-			border-left: 2px solid @gray;
+			.button {
+				border-left: 2px solid @gray;
+				border-right: 2px solid @gray;
+				padding: 5px 10px;
+			}
+			.info {
+				padding: 5px 10px;
+			}
+		}
+		.contact {
+			margin-right: 20px;
+			float: right;
+			.live-chat {
+				padding: 5px 10px;
+				border-left: 2px solid @gray;
+			}
+			.phone {
+				padding: 5px 10px;
+				border-left: 2px solid @gray;
+				border-right: 2px solid @gray;
+			}
 		}
 	}
 	.main {
