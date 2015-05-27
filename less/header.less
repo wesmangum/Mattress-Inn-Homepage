@@ -1,4 +1,10 @@
 header {
+	background-color: @white;
+	@media (max-width: @phone) {
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+	}
 	.super-header {
 		border-bottom: 2px solid @gray;
 		.contain {
@@ -31,6 +37,14 @@ header {
 				padding: 5px 10px;
 				border-left: 2px solid @gray;
 				border-right: 2px solid @gray;
+			}
+		}
+		@media (max-width: @phone) {
+			.facebook-header, .contact {
+				margin: 0;
+				span {
+					display: none;
+				}
 			}
 		}
 	}
