@@ -91,7 +91,7 @@
 				width: 100%;
 				height: auto;
 			}
-			@media (max-width: @phone) {
+			@media (max-width: @desktop) {
 				height: auto;
 			}
 		}
@@ -231,9 +231,14 @@
 				margin: 0 auto;
 				padding: 0.5em 1em;
 				border-radius: 5px;
+				border: 1px solid @red;
 				display: inline-block;
 				background-color: @red;
 				color: @white;
+				&:hover {
+					background-color: @white;
+					color: @red;
+				}
 			}
 		}
 		@media (max-width: @phone) {
