@@ -1,0 +1,43 @@
+.sidebar {
+	padding-right: 15px;
+	@media (max-width: @phone) {
+		padding-right: 0;
+	}
+	.products {
+		margin-bottom: 2em;
+		h2 {
+			text-transform: uppercase;
+			font-size: 25px;
+			margin-bottom: 10px;
+		}
+		.product {
+			padding-left: 10px;
+			margin: 5px 0;
+		}
+	}
+	.live-chat, .fill-station-pillow {
+		margin-bottom: 2em;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.services {
+		.col-4 {
+			text-align: center;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		p {
+			font-size: 9px;
+			text-transform: uppercase;
+		}
+		@media (max-width: @phone) {
+			img{
+				width: auto;
+			}
+		}
+	}
+}

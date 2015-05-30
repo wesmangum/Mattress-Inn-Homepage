@@ -1,0 +1,87 @@
+body.archive {
+	#main {
+		section.product-archive {
+			max-width: @desktop;
+			margin: 0 auto;
+			& > .row {
+				padding: 0 15px;
+			}
+			.sidebar {
+				h2 {
+					margin-top: 0;
+				}
+			}
+			.content {
+				margin-bottom: 2em;
+				.mattresses {
+					padding: 0 15px;
+					.col-6 {
+						padding: 0;
+						&:nth-of-type(even) {
+							padding-left: 5px;
+						}
+						&:nth-of-type(odd) {
+							padding-right: 5px;
+							clear: left;
+						}
+					}
+					.mattress {
+						background-color: @gray;
+						margin-bottom: 2em;
+						.cover-image {
+							position: relative;
+							& > img {
+								width: 100%;
+								height: auto;
+							}
+							.overlay {
+								position: absolute;
+								bottom: 20px;
+								color: @white;
+								width: 100%;
+								text-align: left;
+								.info {
+									margin: 0 2em;
+									img {
+										float: left;
+										margin-right: 10px;
+									}
+									h3 {
+										font-size: 20px;
+										margin: 0 0 10px;
+									}
+									span {
+										font-size: 12px;
+									}
+								}
+							}
+						}
+						.description {
+							padding: 0 15px 15px;
+							text-align: center;
+							.button {
+								margin: 0 auto;
+								padding: 0.5em 1em;
+								border-radius: 5px;
+								border: 1px solid @red;
+								display: inline-block;
+								background-color: @red;
+								color: @white;
+								&:hover {
+									background-color: @white;
+									color: @red;
+								}
+							}
+						}
+					}
+				}
+			}
+			.video {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
