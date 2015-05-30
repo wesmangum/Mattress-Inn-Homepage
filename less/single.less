@@ -15,5 +15,114 @@ body.single {
 				}
 			}
 		}
+		section.product-info {
+			max-width: @desktop;
+			margin: 0 auto;
+			& > .row {
+				padding: 0 15px;
+			}
+			.sidebar {
+				padding-right: 15px;
+				@media (max-width: @phone) {
+					padding-right: 0;
+				}
+				.products {
+					margin-bottom: 2em;
+					h2 {
+						text-transform: uppercase;
+						font-size: 25px;
+						margin-bottom: 10px;
+					}
+					.product {
+						padding-left: 10px;
+						margin: 5px 0;
+					}
+				}
+				.live-chat, .fill-station-pillow {
+					margin-bottom: 2em;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				.services {
+					.col-4 {
+						text-align: center;
+					}
+					img {
+						width: 100%;
+						height: auto;
+					}
+					p {
+						font-size: 9px;
+						text-transform: uppercase;
+					}
+					@media (max-width: @phone) {
+						img{
+							width: auto;
+						}
+					}
+				}
+			}
+			.content {
+				.info {
+					img {
+						float: left;
+						margin-right: 10px;
+					}
+					h3 {
+						font-size: 20px;
+						margin-bottom: 10px;
+					}
+					span {
+						font-size: 12px;
+						font-family: @font-family-secondary;
+					}
+					p {
+						font-size: 16px;
+					}
+				}
+				.features {
+					position: relative;
+					margin-bottom: 2em;
+					h3 {
+						font-size: 20px;
+						margin-bottom: 10px;
+					}
+					ul {
+						list-style-type: none;
+						li {
+							margin: 10px 0;
+							font-family: @font-family-secondary;
+						}
+					}
+					& > ul {
+						padding: 0;
+						margin: 10px 0;
+						span {
+							font-family: @font-family-secondary;
+							font-weight: 700;
+						}
+						ul {
+							padding-left: 30px;
+						}
+					}
+					.contact {
+						text-transform: uppercase;
+						font-family: @font-family-primary;
+						color: @red;
+						position: absolute;
+						bottom: 0;
+						right: 0;
+					}
+				}
+				.pictures {
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
 	}
 }
