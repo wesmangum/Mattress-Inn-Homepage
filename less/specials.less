@@ -92,13 +92,21 @@ body.page-specials {
 						&.active {
 							background-color: @red;
 						}
+						@media (max-width: @phone) {
+							float: none;
+							width: 100%;
+						}
 						h3 {
-							margin: 5px 0;
+							padding: 5px 0;
+							margin: 0;
 							font-size: 20px;
 						}
 					}
 					.menu-item-pricing {
 						border-right: 2px solid @white;
+						@media (max-width: @phone) {
+							border-right: 2px solid @red;
+						}
 					}
 					.menu-item-features {
 						background-color: @black;
@@ -106,8 +114,26 @@ body.page-specials {
 					.mattress-info {
 						position: relative;
 						padding: 0;
+						.pricing {
+							table {
+								tbody {
+									td:nth-of-type(3n) {
+										color: @red;
+										font-weight: bold;
+									}
+								}
+							}
+						}
 						.pricing, .features {
-							margin: 50px 50px 0;
+							margin: 7% 50px 0;
+							@media (max-width: @tablet) {
+								margin-top: 20px;
+							}
+							@media (max-width: @phone) {
+								margin: 0;
+								padding: 20px;
+								padding-top: 50px;
+							}
 							&.hide {
 								position: absolute;
 								top: 0;
@@ -138,8 +164,14 @@ body.page-specials {
 								}
 								tbody {
 									tr {
-										height: 40px;
+										height: 36px;
+										@media (max-width: @tablet) {
+											height: 20px;
+										}
 										font-family: @font-family-secondary;
+										td {
+											font-size: 12px;
+										}
 										a {
 											color: @black;
 											text-decoration: underline;
@@ -148,7 +180,10 @@ body.page-specials {
 								}
 							}
 							.mattress-footer {
-								margin-top: 15px;
+								margin: 15px 0 50px;
+								@media (max-width: @phone) {
+									margin-bottom: 50px;
+								}
 								.info {
 									float: left;
 									img {
