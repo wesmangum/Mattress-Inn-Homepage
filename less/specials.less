@@ -1,0 +1,187 @@
+body.page-specials {
+	#main {
+		section.specials {
+			max-width: @desktop;
+			margin: 0 auto;
+			padding-bottom: 0;
+			.special {
+				border: 3px solid @red;
+				text-align: center;
+				padding: 15px;
+				h1 {
+					font-size: 40px;
+					margin: 0;
+					color: @red;
+					text-transform: uppercase;
+				}
+				h2 {
+					font-size: 28px;
+					margin: 0;
+					color: @red;
+				}
+				h3 {
+					margin: 10px auto;
+					font-size: 16px;
+					font-family: @font-family-secondary;
+					font-weight: bold;
+				}
+				.copy {
+					font-size: 11px;
+					max-width: 800px;
+					line-height: 1.6;
+					margin: 0 auto;
+					p {
+						margin: 0;
+					}
+				}
+			}
+			.special-footer {
+				text-align: right;
+				color: @red;
+				font-size: 16px;
+			}
+		}
+		section.mattresses {
+			max-width: @desktop;
+			margin: 0 auto;
+			background: transparent;
+			.mattress {
+				margin: 0 15px 2em;
+				background-color: @gray;
+				.cover-image, .pricing-features {
+					padding: 0;
+				}
+				.cover-image {
+					position: relative;
+					& > img {
+						width: 100%;
+						height: auto;
+						display: block;
+					}
+					.overlay {
+						position: absolute;
+						top: 0;
+						width: 100%;
+						background-color: rgba(0, 0, 0, 0.6);
+						.info {
+							text-align: left;
+							margin: 15px 30px;
+							color: @white;
+							img {
+								float: left;
+								margin-right: 10px;
+							}
+							h3 {
+								font-size: 20px;
+								margin-top: 0;
+								margin-bottom: 10px;
+							}
+							span {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+				.pricing-features {
+					margin: 0;
+					[class^="menu-item"] {
+						width: 50%;
+						float: left;
+						color: @white;
+						background-color: @black;
+						&.active {
+							background-color: @red;
+						}
+						h3 {
+							margin: 5px 0;
+							font-size: 20px;
+						}
+					}
+					.menu-item-pricing {
+						border-right: 2px solid @white;
+					}
+					.menu-item-features {
+						background-color: @black;
+					}
+					.mattress-info {
+						position: relative;
+						padding: 0;
+						.pricing, .features {
+							margin: 50px 50px 0;
+							&.hide {
+								position: absolute;
+								top: 0;
+								display: none;
+							}
+							table {
+								display: table;
+								margin: 0 auto;
+								padding: 0 15px;
+								text-align: left;
+								table-layout: fixed;
+								width: 100%;
+								thead {
+									border-bottom: 1px solid @black;
+									text-transform: uppercase;
+									th {
+										font-weight: normal;
+									}
+									h4 {
+										font-size: 15px;
+										margin: 0;
+									}
+									span {
+										font-weight: normal;
+										font-size: 12px;
+										font-family: @font-family-secondary;
+									}
+								}
+								tbody {
+									tr {
+										height: 40px;
+										font-family: @font-family-secondary;
+										a {
+											color: @black;
+											text-decoration: underline;
+										}
+									}
+								}
+							}
+							.mattress-footer {
+								margin-top: 15px;
+								.info {
+									float: left;
+									img {
+										width: 40px;
+										height: auto;
+									}
+									span {
+										font-family: @font-family-secondary;
+										font-size: 12px;
+									}
+								}
+								.print {
+									float: right;
+									.button {
+										margin: 0 auto;
+										padding: 0.65em 3em;
+										border-radius: 5px;
+										border: 1px solid @red;
+										display: inline-block;
+										background-color: @red;
+										color: @white;
+										font-size: 15px;
+										&:hover {
+											background-color: @white;
+											color: @red;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
