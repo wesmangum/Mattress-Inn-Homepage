@@ -218,5 +218,60 @@ body.page-specials {
 				}
 			}
 		}
+		section.contact-offers {
+			padding-top: 0;
+			max-width: @desktop;
+			margin: 0 auto;
+			.row {
+				margin: 0;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.services {
+				.col-4 {
+					text-align: center;
+				}
+				img {
+					width: 100%;
+					height: auto;
+				}
+				p {
+					font-size: 12px;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+				@media (max-width: @phone) {
+					img{
+						width: auto;
+					}
+				}
+			}
+		}
+		section.types {
+			padding: 0;
+			background: @red;
+			.mattress {
+				text-align: center;
+				a {
+					color: @white;
+				}
+			}
+			.row:first-of-type {
+				border-bottom: 2px solid @white;
+			}
+			.mattress:nth-of-type(-n+3) {
+				border-right: 2px solid @white;
+			}
+			@media (max-width: @phone) {
+				.mattress {
+					border-bottom: 2px solid @white;
+				}
+				.row:first-of-type {
+					border-bottom: none;
+				}
+			}
+		}
 	}
 }
