@@ -1,304 +1,241 @@
-#main {
-	@media (max-width: @phone) {
-		padding-top: 67px;
-	}
-	section {
-		padding: 5em 0;
-		.title {
-			font-size: 25px;
-			text-align: center;
-			margin-top: 0;
-			text-transform: uppercase;
-			.line {
-				width: 45px;
-				margin: 0 auto;
-				padding-top: 0.8em;
-				border-bottom: 3px solid @black;
-			}
-		}
+body.home {
+	#main {
 		@media (max-width: @phone) {
-			padding: 3em 0;
+			padding-top: 67px;
 		}
-	}
-
-	.gray-background {
-		background: @gray;
-	}
-
-	section.coverpage {
-		padding: 0;
-		.headlines {
-			background-color: @red;
-			.row {
-				height: 140px;
-				max-width: 1200px;
-				margin: 0 auto;
-			}
-			.headline {
+		section {
+			padding: 5em 0;
+			.title {
+				font-size: 25px;
 				text-align: center;
-				color: @white;
-				background-color: @red;
-				padding: 20px 30px;
-				height: 100%;
-				&.center {
-					padding-top: 30px;
-					background-color: @black;
-					border-left: 2px solid @white;
-					border-right: 2px solid @white;
-					h2 {
-						margin: 0;
-						text-transform: uppercase;
-						&:first-of-type {
-							font-weight: bold;
-						}
-					}
-				}
-				a {
-					color: @white;
-					&:hover {
-						color: @white;
-						text-decoration: none;
-					}
-				}
-				img {
-					margin: 0 auto;
-					height: 40px;
-					width: auto;
-					padding-bottom: 10px;
-				}
+				margin-top: 0;
+				text-transform: uppercase;
 				.line {
-					border-bottom: 1px solid @white;
+					width: 45px;
 					margin: 0 auto;
-					margin-bottom: 10px;
-					max-width: 200px;
+					padding-top: 0.8em;
+					border-bottom: 3px solid @black;
 				}
 			}
 			@media (max-width: @phone) {
-				.row {
-					height: auto;
-				}
-				.headline.center {
-					border: none;
-				}
+				padding: 3em 0;
 			}
 		}
-		.cover-img {
-			height: 500px;
-			overflow: hidden;
-			text-align: center;
-			& > img {
-				width: 100%;
-				height: auto;
-				display: block;
-			}
-			@media (max-width: @desktop) {
-				height: auto;
-			}
-		}
-	}
 
-	section.specials {
-		.row {
-			max-width: 1200px;
-			margin: 0 auto;
-			.col-4 {
-				text-align: center;
-				.special {
-					max-width: 328px;
-					min-height: 140px;
-					position: relative;
-					margin: 0 auto;
-					@media (max-width: @phone) {
-						margin-bottom: 10px;
-					}
-					.copy {
-						padding: 15px 35px;
-						background-color: @red;
-						border-radius: 5px;
-						color: @white;
-						position: absolute;
-						top: 0;
-						bottom: 0;
+		.gray-background {
+			background: @gray;
+		}
+
+		section.coverpage {
+			padding: 0;
+			.cover-img {
+				max-height: 500px;
+			}
+		}
+
+		section.specials {
+			.row {
+				max-width: 1200px;
+				margin: 0 auto;
+				.col-4 {
+					text-align: center;
+					.special {
+						max-width: 328px;
+						min-height: 140px;
+						position: relative;
+						margin: 0 auto;
 						@media (max-width: @phone) {
-							right: 0;
-							left: 0;
+							margin-bottom: 10px;
 						}
-						h3 {
-							margin: 0;
-							text-transform: uppercase;
-							font-size: 24px;
-							font-weight: 600;
-							line-height: 1;
-						}
-						p {
-							font-size: 12px;
-							margin: 5px 0;
-							font-family: @font-family-primary;
-						}
-						span {
-							font-size: 12px;
-							margin-top: 5px;
-						}
-						.date {
-							font-size: 15px;
-							display: block;
-						}
-						.price {
-							font-size: 24px;
-							display: block;
-						}
-						sup {
-							font-size: 12px;
-							top: -8px;
+						.copy {
+							padding: 15px 35px;
+							background-color: @red;
+							border-radius: 5px;
+							color: @white;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							@media (max-width: @phone) {
+								right: 0;
+								left: 0;
+							}
+							h3 {
+								margin: 0;
+								text-transform: uppercase;
+								font-size: 24px;
+								font-weight: 600;
+								line-height: 1;
+							}
+							p {
+								font-size: 12px;
+								margin: 5px 0;
+								font-family: @font-family-primary;
+							}
+							span {
+								font-size: 12px;
+								margin-top: 5px;
+							}
+							.date {
+								font-size: 15px;
+								display: block;
+							}
+							.price {
+								font-size: 24px;
+								display: block;
+							}
+							sup {
+								font-size: 12px;
+								top: -8px;
+							}
 						}
 					}
 				}
 			}
 		}
-	}
 
-	section.about {
-		.copy {
-			max-width: 900px;
-			margin: 0 auto;
-			text-align: center;
-			a {
-				font-weight: 600;
+		section.about {
+			.copy {
+				max-width: 900px;
+				margin: 0 auto;
+				text-align: center;
+				a {
+					font-weight: 600;
+				}
+			}
+			@media (max-width: @phone) {
+				padding-left: 15px;
+				padding-right: 15px;
 			}
 		}
-		@media (max-width: @phone) {
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-	}
 
-	section.mattresses {
-		padding: 0;
-		background: @red;
-		.mattress {
-			text-align: center;
-			a {
-				color: @white;
-			}
-		}
-		.row:first-of-type {
-			border-bottom: 2px solid @white;
-		}
-		.mattress:nth-of-type(-n+3) {
-			border-right: 2px solid @white;
-		}
-		@media (max-width: @phone) {
+		section.mattresses {
+			padding: 0;
+			background: @red;
 			.mattress {
-				border-bottom: 2px solid @white;
+				text-align: center;
+				a {
+					color: @white;
+				}
 			}
 			.row:first-of-type {
-				border-bottom: none;
+				border-bottom: 2px solid @white;
+			}
+			.mattress:nth-of-type(-n+3) {
+				border-right: 2px solid @white;
+			}
+			@media (max-width: @phone) {
+				.mattress {
+					border-bottom: 2px solid @white;
+				}
+				.row:first-of-type {
+					border-bottom: none;
+				}
 			}
 		}
-	}
 
-	section.fill-station {
-		.tagline {
-			max-width: 900px;
-			margin: 0 auto 15px;
-			border-top: 1px solid @black;
-			border-bottom: 1px solid @black;
-			div {
-				padding: 15px 15px;
-				text-align: center;
-				text-transform: uppercase;
-			}
-		}
-		.copy {
-			max-width: 900px;
-			margin: 0 auto;
-			text-align: center;
-		}
-		.features {
-			max-width: 400px;
-			margin: 0 auto;
-			text-align: center;
-			ul {
-				display: inline-block;
-				list-style-type: none;
-				li {
-					padding: 5px 0;
-					text-align: left;
-					font-size: 16px;
-				}
-			}
-			.button {
-				margin: 0 auto;
-				padding: 0.5em 1em;
-				border-radius: 5px;
-				border: 1px solid @red;
-				display: inline-block;
-				background-color: @red;
-				color: @white;
-				&:hover {
-					background-color: @white;
-					color: @red;
-				}
-			}
-		}
-		@media (max-width: @phone) {
-			padding-left: 15px;
-			padding-right: 15px;
+		section.fill-station {
 			.tagline {
+				max-width: 900px;
+				margin: 0 auto 15px;
+				border-top: 1px solid @black;
+				border-bottom: 1px solid @black;
 				div {
-					width: 33%;
-					float: left;
+					padding: 15px 15px;
+					text-align: center;
+					text-transform: uppercase;
 				}
+			}
+			.copy {
+				max-width: 900px;
+				margin: 0 auto;
+				text-align: center;
 			}
 			.features {
+				max-width: 400px;
+				margin: 0 auto;
+				text-align: center;
 				ul {
-					padding: 0;
+					display: inline-block;
+					list-style-type: none;
 					li {
-						text-align: center;
+						padding: 5px 0;
+						text-align: left;
+						font-size: 16px;
 					}
 				}
-				ul:last-of-type {
-					padding-left: 10px;
+				.button {
+					margin: 0 auto;
+					padding: 0.5em 1em;
+					border-radius: 5px;
+					border: 1px solid @red;
+					display: inline-block;
+					background-color: @red;
+					color: @white;
+					&:hover {
+						background-color: @white;
+						color: @red;
+					}
+				}
+			}
+			@media (max-width: @phone) {
+				padding-left: 15px;
+				padding-right: 15px;
+				.tagline {
+					div {
+						width: 33%;
+						float: left;
+					}
+				}
+				.features {
+					ul {
+						padding: 0;
+						li {
+							text-align: center;
+						}
+					}
+					ul:last-of-type {
+						padding-left: 10px;
+					}
 				}
 			}
 		}
-	}
-	section.offers {
-		.row {
-			max-width: 900px;
-			margin: 0 auto;
-			.offer {
-				text-align: center;
-				p {
-					text-transform: uppercase;
-					font-size: 16px;
+		section.offers {
+			.row {
+				max-width: 900px;
+				margin: 0 auto;
+				.offer {
+					text-align: center;
+					p {
+						text-transform: uppercase;
+						font-size: 16px;
+					}
 				}
 			}
 		}
-	}
-	section.brands {
-		.row {
-			max-width: 900px;
-			margin: 0 auto;
-		}
-		.col-4 {
-			display: table;
-				height: 150px;
-			.brand {
-				display: table-cell;
-				vertical-align: middle;
-				text-align: center;
+		section.brands {
+			.row {
+				max-width: 900px;
+				margin: 0 auto;
 			}
-		}
-		@media (max-width: @phone) {
 			.col-4 {
-				width: 100%;
+				display: table;
+					height: 150px;
+				.brand {
+					display: table-cell;
+					vertical-align: middle;
+					text-align: center;
+				}
+			}
+			@media (max-width: @phone) {
+				.col-4 {
+					width: 100%;
+				}
 			}
 		}
 	}
-}
 
-footer {
-	background: @black;
-	color: @white;
+	footer {
+		background: @black;
+		color: @white;
+	}
 }

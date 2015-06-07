@@ -1,10 +1,73 @@
-body:not(.home) {
+body {
 	section.coverpage {
+		padding: 0;
+		.headlines {
+			background-color: @red;
+			.row {
+				height: 140px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+			.headline {
+				text-align: center;
+				color: @white;
+				background-color: @red;
+				padding: 20px 30px;
+				height: 100%;
+				&.center {
+					padding-top: 30px;
+					background-color: @black;
+					border-left: 2px solid @white;
+					border-right: 2px solid @white;
+					h2 {
+						margin: 0;
+						text-transform: uppercase;
+						&:first-of-type {
+							font-weight: bold;
+						}
+					}
+				}
+				a {
+					color: @white;
+					&:hover {
+						color: @white;
+						text-decoration: none;
+					}
+				}
+				img {
+					margin: 0 auto;
+					height: 40px;
+					width: auto;
+					padding-bottom: 10px;
+				}
+				.line {
+					border-bottom: 1px solid @white;
+					margin: 0 auto;
+					margin-bottom: 10px;
+					max-width: 200px;
+				}
+			}
+			@media (max-width: @phone) {
+				.row {
+					height: auto;
+				}
+				.headline.center {
+					border: none;
+				}
+			}
+		}
 		.cover-img {
+			overflow: hidden;
+			text-align: center;
 			position: relative;
 			max-height: 400px;
 			& > img {
+				width: 100%;
+				height: auto;
 				display: block;
+			}
+			@media (max-width: @desktop) {
+				height: auto;
 			}
 			.banner {
 				position: absolute;
