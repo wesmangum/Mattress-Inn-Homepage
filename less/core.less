@@ -44,3 +44,31 @@ p {
 strong {
 	font-weight: 600;
 }
+
+#main {
+	@media (max-width: @phone) {
+		padding-top: 67px;
+	}
+	section {
+		padding: 5em 0;
+		.title {
+			font-size: 25px;
+			text-align: center;
+			margin-top: 0;
+			text-transform: uppercase;
+			.line {
+				width: 45px;
+				margin: 0 auto;
+				padding-top: 0.8em;
+				border-bottom: 3px solid @black;
+			}
+		}
+		@media (max-width: @phone) {
+			padding: 3em 0;
+		}
+	}
+
+	.gray-background {
+		background: @gray;
+	}
+}
