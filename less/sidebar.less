@@ -16,16 +16,11 @@ a.mobile-menu {
 }
 .sidebar {
 	padding-right: 15px;
+	background-color: @white;
 	@media (max-width: @phone) {
-		position: relative;
-		overflow: hidden;
 		padding-right: 0;
-		height: 0;
-		right: 105%;
 		.transition( all 0.1s ease-in-out );
 		&.reveal {
-			height: 100%;
-			right: 0;
 		}
 	}
 	.products {
@@ -74,5 +69,47 @@ a.mobile-menu {
 				width: auto;
 			}
 		}
+	}
+}
+
+.content {
+	@media (max-width: @phone) {
+		.transition( all 0.1s ease-in-out );
+		&.hide {
+		}
+	}
+}
+.site-wrapper {
+	@media (max-width: @phone) {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+	}
+}
+
+@media (max-width: @phone) {
+	.site-canvas {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		.translate(0, 0);
+		.transition(all 0.3s ease);
+	}
+	.site-menu {
+		margin-top: 20px;
+		width: 325px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -325px;
+		.products,
+		.live-chat,
+		.fill-station-pillow,
+		.services {
+			padding-left: 30px;
+		}
+	}
+	.show-nav .site-canvas {
+		.translate(325px, 0);
 	}
 }

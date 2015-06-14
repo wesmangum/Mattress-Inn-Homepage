@@ -1,6 +1,6 @@
 (function () {
 	var $menu = $('.mobile-menu'),
-		$sidebar =  $('.sidebar')
+		$site_wrapper =  $('.site-wrapper')
 	;
 	function menu_listener() {
 		$menu.on('click', toggle_menu);
@@ -9,7 +9,7 @@
 	function toggle_menu (e) {
 		e.preventDefault();
 
-		$sidebar.toggleClass('reveal');
+		$site_wrapper.toggleClass('show-nav');
 	}
 
 	menu_listener();
