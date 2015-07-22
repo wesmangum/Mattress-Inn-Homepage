@@ -4,6 +4,30 @@ body {
 			padding: 0;
 			.headlines {
 				background-color: @red;
+				.mobile-menu {
+					display: none;
+					padding: 15px;
+					color: white;
+					@media (max-width: @phone) {
+						display: block;
+					}
+					.menu {
+						color: white;
+						&:hover {
+							color: black;
+						}
+					}
+				}
+				.navigation{
+					@media (max-width: @phone) {
+						max-height: 0;
+						overflow: hidden;
+						.transition( max-height 0.1s ease-in-out);
+						&.show {
+							max-height: 800px;
+						}
+					}
+				}
 				.row {
 					height: 140px;
 					max-width: 1200px;
