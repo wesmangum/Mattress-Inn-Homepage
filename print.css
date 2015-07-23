@@ -1,0 +1,63 @@
+@media print {
+	header,
+	.coverpage,
+	.contact-offers,
+	.types,
+	.facebook-footer,
+	.print,
+	#main .specials h2,
+	.mattress .info img,
+	.mattress-footer {
+		display: none;
+	}
+	#main .specials {
+		padding-top: 0;
+	}
+	.mattress .cover-image{
+		width: 25%;
+		float: left;
+	}
+	.pricing-features {
+		width: 75%;
+		float: left;
+	}
+	body.page-specials #main section.mattresses .mattress .pricing-features .menu-item-pricing,
+	body.page-specials #main section.mattresses .mattress .pricing-features .menu-item-features {
+		width: 50%;
+		float: left;
+		margin: 0;
+		display: inline-block;
+	}
+	body.page-specials #main section.mattresses .mattress .pricing-features .mattress-info .pricing,
+	body.page-specials #main section.mattresses .mattress .pricing-features .mattress-info .features {
+		width: 45%;
+		float: left;
+		margin: 0;
+		display: inline-block;
+	}
+	body.page-specials #main section.mattresses .mattress .pricing-features .mattress-info .pricing table {
+		padding: 0;
+	}
+	body.page-specials #main section.mattresses .mattress .cover-image .overlay {
+		background-color: transparent;
+		position: relative;
+		top: auto;
+	}
+	body.page-specials #main section.mattresses .mattress .cover-image .overlay .info  {
+		margin: 0;
+	}
+	body.page-specials #main section.mattresses .mattress .pricing-features .mattress-info .features.hide {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+	}
+	.mattress .info h3,
+	.mattress .info span,
+	body.page-specials #main section.mattresses .mattress .pricing-features .menu-item-pricing,
+	body.page-specials #main section.mattresses .mattress .pricing-features .menu-item-features,
+	.sub-footer a,
+	.sub-footer p {
+		color: black;
+	}
+}
